@@ -6,8 +6,8 @@ from datetime import datetime
 import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
-cl.login(qr=True)
-#cl.login(token="authtoken-ente")
+#cl.login(qr=True)
+cl.login(token="EmMzelWV0BCIu5M0Znv4.kLXAwsJVp+PmE4R18v6b9a.weZQOJVqJQxA+O6le30KfrV6BbyGFCAj2JvhL0WhP8A=")
 cl.loginResult()
 
 ki = kk = kc = cl 
@@ -157,6 +157,15 @@ def bot(op):
                         X.preventJoinByTicket = True
                         cl.updateGroup(X)
                         Ti = cl.reissueGroupTicket(op.param1)
+
+#----------------------[Masukin Semua SC Yang Ente Pengen Disini]----------------------#
+        if op.type == 25:
+            msg = op.message
+            if msg.text in ["Speed","speed"]:
+                    start = time.time()
+                    elapsed_time = time.time() - start
+                    cl.sendText(msg.to, "%sseconds" % (elapsed_time))
+#----------------------[Masukin Semua SC Yang Ente Pengen Disini]----------------------#
 
         if op.type == 59:
             print op
