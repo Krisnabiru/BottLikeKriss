@@ -7,6 +7,7 @@ import time,random,sys,json,codecs,threading,glob,re
 
 cl = LINETCR.LINE()
 cl.login(qr=True)
+#cl.login(token="authtoken-ente")
 cl.loginResult()
 
 ki = kk = kc = cl 
@@ -67,8 +68,8 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 #---------------------------[AutoLike-nya]---------------------------#
 #Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
 def autolike():#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
-     for zx in range(0,20):#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
-        hasil = cl.activity(limit=20)#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
+     for zx in range(0,100):#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
+        hasil = cl.activity(limit=100)#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
           try:    #Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)#Tolong Kerjasama-nya untuk tidak merubah komen secara keseluruhan terutama pada URL Channel Youtube Saya, kalau mau ditambah dikit silahkan
@@ -172,24 +173,6 @@ def a2():
         return False
     else:
         return True
-
-def nameUpdate():
-    while True:
-        try:
-        #while a2():
-            #pass
-            if wait["clock"] == True:
-                now2 = datetime.now()
-                nowT = datetime.strftime(now2,"(%H:%M)")
-                profile = cl.getProfile()
-                profile.displayName = wait["cName"] + nowT
-                cl.updateProfile(profile)
-            time.sleep(600)
-        except:
-            pass
-thread2 = threading.Thread(target=nameUpdate)
-thread2.daemon = True
-thread2.start()
 
 while True:
     try:
