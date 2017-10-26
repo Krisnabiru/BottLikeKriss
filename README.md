@@ -1,4 +1,6 @@
-### BOT LIKE V1.0
+### BOT LIKE V1.2
+
+1x Login = 100 Like ( Ubah Pengaturan Timeline dengan cara menghilangkan ceklis pada Post Populer dulu )
 
 Bot ini hanya berfungsi untuk nge-LIKE semua post/status yang ada di timeline secara otomatis dan memberikan komentar secara otomatis
 Jika terdapat Post/Status baru, bot ini tidak bisa langsung nge-LIKE post/status tersebut, tetapi kalian harus login ulang bot tersebut, saya sarankan kalian merubah cara loginnya menggunakan "authtoken"
