@@ -27,6 +27,16 @@ Saat pertama login, pada terminal / termux kalian, kalian akan diberi authtoken 
 authToken -> EmGxXwhjizYIReLFxxxx.eFtfXEQQ9zeBAclHFogALq.3sv5woAxxxxHYXBJFxxxxxxxPToPfzUNv2VYvSXXXX=
 ```
 
+### Cara Ubah Komentar Pada AutoLike + AutoKomentar
+Edit File bot.py dan cari teks :
+```bash
+UBAH_INI_SESUAI_KEINGINAN_KALIAN
+```
+Dan ubah teks diatas sesuai komen yang ingin kalian gunakan, gunakan \n untuk enter, contoh :
+```bash
+Autolike By Farzain - zFz\n\nSubscribe Channel Saya yak kalau mau bisa kayak gini\nhttps://youtube.com/c/zfz48
+```
+
 ### Catatan
 Jika kalian mengerti bahasa pemograman, tolong untuk jangan merubah result komentar-nya, tetapi jika kalian memaksa ingin merubahnya, tolong jangan hapus URL Channel Youtube saya :) Terima Kasih
 
