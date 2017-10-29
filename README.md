@@ -1,4 +1,4 @@
-### BOT LIKE V2
+### BOT LIKE V2.2
 
 1x Login = 100 Like ( Ubah Pengaturan Timeline dengan cara menghilangkan ceklis pada Post Populer dulu )
 
