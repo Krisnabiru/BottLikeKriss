@@ -70,8 +70,10 @@ def autolike():
         hasil = cl.activity(limit=100)
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    
-            like_function = "ICAgICAgICAgICAgY2wubGlrZShoYXNpbFsncmVzdWx0J11bJ3Bvc3RzJ11benhdWyd1c2VySW5mbyddWydtaWQnXSxoYXNpbFsncmVzdWx0J11bJ3Bvc3RzJ11benhdWydwb3N0SW5mbyddWydwb3N0SWQnXSxsaWtlVHlwZT0xMDAyKQogICAgICAgICAgICBjbC5jb21tZW50KGhhc2lsWydyZXN1bHQnXVsncG9zdHMnXVt6eF1bJ3VzZXJJbmZvJ11bJ21pZCddLGhhc2lsWydyZXN1bHQnXVsncG9zdHMnXVt6eF1bJ3Bvc3RJbmZvJ11bJ3Bvc3RJZCddLCJBdXRvbGlrZSBCeSBGYXJ6YWluIC0gekZ6XG5cblN1YnNjcmliZSBDaGFubmVsIFNheWEgeWFrIGthbGF1IG1hdSBiaXNhIGtheWFrIGdpbmlcbmh0dHBzOi8veW91dHViZS5jb20vYy96Zno0OCIp"
-            exec(base64.b64decode(like_function))
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
+            cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Farzain - zFz\n\nSubscribe Channel Saya yak kalau mau bisa kayak gini\nhttps://youtube.com/c/zfz48")
+            #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
             cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"UBAH_INI_SESUAI_KEINGINAN_KALIAN")
             print "Like"
           except:
