@@ -29,9 +29,9 @@ wait = {
     'leaveRoom':True,
     'timeline':True,
     'autoAdd':True,
-    'message':"Makasih udah di add, bott by : krisnabiru.",
+    'message':"Makasih udah di add, my owner id : iamfake",
     "lang":"JP",
-    "comment":"Makasih udah di add, bott by : krisnabiru.",
+    "comment":"Makasih udah di add, my owner id : iamfake",
     "commentOn":False,
     "commentBlack":{},
     "wblack":False,
@@ -72,9 +72,9 @@ def autolike():
           try:    
             #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Bott autolike by : http://line.me/ti/p/~krisnabiru.")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Bott autolike by : http://line.me/ti/p/~iamfake")
             #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Bott autolike by : http://line.me/ti/p/~krisnabiru.")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Bott autolike by : http://line.me/ti/p/~iamfake")
             print "Like"
           except:
             pass
